@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Login</h2>
+
+           {{#if errorMessage}}
+             <div class="alert alert-danger"> <strong>Error:</strong> {{errorMessage}}</div>
+{{/if}}
+
+            <form method="post" action="/login">
+             
+              <fieldset>
+               
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                   
+                      <input placeholder="User name" required class="form-control" id="userName" name="userName" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      
+                      <input placeholder="Password" required class="form-control" id="password" name="password" type="password" />
+                    </div>
+                  </div>
+                </div>
+            
+              <input type="submit" class="btn btn-primary pull-right" value="Login" /><br /><br /><br />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
